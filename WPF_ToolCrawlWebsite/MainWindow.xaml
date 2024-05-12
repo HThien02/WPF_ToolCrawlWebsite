@@ -1,0 +1,20 @@
+﻿<Window x:Class="WPF_ToolCrawlWebsite.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_ToolCrawlWebsite"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="600">
+    <Grid>
+        <Canvas Background="Pink">
+            <TextBlock FontWeight="DemiBold" Canvas.Left="50" Canvas.Top="10">
+                Drop Website's link HERE!
+            </TextBlock>
+            <TextBox x:Name="txtLink" Height="25" Width="415" Canvas.Left="50" Canvas.Top="31" Cursor="" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBox>
+            <Button x:Name="btnExport" Background="HotPink" Height="25" Width="80" Canvas.Left="470" Canvas.Top="31" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center" Click="btnExport_Click">Export</Button>
+            <ListView x:Name="listView" Width="500" Height="300" Canvas.Left="50" Canvas.Top="93" HorizontalAlignment="Center" VerticalAlignment="Top"></ListView>
+            <TextBlock FontWeight="DemiBold" Canvas.Left="50" Canvas.Top="72" HorizontalAlignment="Center" VerticalAlignment="Top">HTML HERE</TextBlock>
+        </Canvas>
+    </Grid>
+</Window>
